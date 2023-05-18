@@ -1,7 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Greetings from "../components/Greetings.svelte";
+const messages = ["Hi", "Hello", "Howdy", "Hey there"];
 ---
 
 <BaseLayout title="Home Page">
     <h2>My awesome blog subtitle</h2>
+    <Greetings messages={messages} client:only="svelte" />
 </BaseLayout>

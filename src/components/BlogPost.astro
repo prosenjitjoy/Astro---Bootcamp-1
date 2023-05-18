@@ -3,3 +3,9 @@ const { url, title } = Astro.props;
 ---
 
 <li><a href={url}>{title}</a></li>
+
+<style>
+    :global(.dark) a {
+        color: white;
+    }
+</style>
